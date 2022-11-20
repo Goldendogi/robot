@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222222;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #65daff;
+    margin-bottom: 50px;
+}
+.section-text{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    line-height: 35px;
+}
+.nav-menu{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    background-color: #222222;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    box-shadow: 0 5px 20px rgba(0, 0, 0,0.7);
+    line-height: 80px;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.navigation{
+    float: right;
+}
+.nav-item{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.nav-item:hover{
+    color: #65daff;
+    text-shadow: 0 0 5px #65daff;
+}
+.site-header{
+    height: 80vh;
+    background: url("img/apex-legends-pathfinder-robot-emoticons-saluting-futuristic.jpg") center/cover no-repeat;
+    position: relative;
+}
+.header-content{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 50%;
+    padding-left: 30px;
+}
+.header-title{
+    color: #4e4e4e;
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.header-sub_title{
+    color: #4e4e4e;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.header-btn{
+    display: block;
+    padding: 30px 80px;
+    background: linear-gradient(45deg, #65DAFF, #70FFCB);
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 15px;
+    /* width: fit-content; */
+}
+.header-btn:hover{
+    box-shadow: 0 0 20px #65DAFF;
+}
+.header-btn:active {
+    background: linear-gradient(45deg, #36788b, #449779);;
+}
+/* Добавить active для кнопок в меню */
+
+
+/* ABOUT  */
+.about{
+    height: 40vh;
+    text-align: center;
+}
+.about-cart{
+    margin-top: 100px;
+    display: inline-block;
+    width: 24%;
+    height: 200px;
+    text-align: center;
+    vertical-align: top;
+}
+.about-cart img{
+    height: 130px;
+    margin-bottom: 30px;
+}
+.about-cart p{
+    font-size: 30px;
+    color: #65DAFF;
+}
+.games-container {
+    margin-top: 100px;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0,0.7);
+}
+.game-card_img{
+    height: 350px;
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+.img1{
+    background: url('img/csgo.jpg') left/cover no-repeat;
+}
+.img2{
+    background: url('img/dota2.jpg') left/cover no-repeat;
+}
+.img3{
+    background: url('img/apex.jpg') left/cover no-repeat;
+}
+.games-card_content {
+    display: inline-block;
+    width: 49%;
+    min-height: 350px;
+    vertical-align: top;
+    padding: 0 15px;
+    text-align: left;
+}
+.game-title{
+    font-size: 25px;
+    color: #70FFCB;
+}
+.game-divider{
+    width: 100px;
+    border: none;
+    height: 3px;
+    background: #70FFCB;
+    margin: 20px 0;
+}
+
+/* 375 425 768 1024 1440 */
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .site-header {
+        margin-top: 82px;
+    }
+
+    .header-title {
+        font-size: 36px;
+    }
+
+    .header-sub_title {
+        font-size: 24px;
+    }
+    .header-btn {
+        padding: 15px 40px;
+    }
+    .about-cart{
+        display: block;
+        margin: 50px auto;
+        width: 100%;
+        height: fit-content;
+    }
+    .about-cart p {
+        font-size: 20px;
+    }
+    .about-cart img  {
+        width: 35%;
+        margin-bottom: 0;
+    }
+    .about{
+        height: fit-content;;
+    }
+    .game-card_img{
+        display: block;
+        width: 100%;
+        /* background-size:contain; */
+        height: 220px;
+    }
+    .games-card_content{
+        width: 100%;
+        min-height: unset;
+    }
+    .img3{
+        height: 266px;
+    }
+}
+@media (max-width: 470px){
+    .header-title{
+        font-size: 24px;
+    }
+}
